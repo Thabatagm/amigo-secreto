@@ -1,5 +1,5 @@
 const participantes = [
-  { nome: "Thabata", sorteado: "Rodrigo" },
+  { nome: "Thabata26", sorteado: "Rodrigo" },
   { nome: "Rodrigo17", sorteado: "Vo Pedro" },
   { nome: "Renam29", sorteado: "Luana" },
   { nome: "Leticia33", sorteado: "Diva" },
