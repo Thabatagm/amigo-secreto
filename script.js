@@ -1,9 +1,17 @@
 const participantes = [
-  { nome: "João", sorteado: "Maria" },
-  { nome: "Maria", sorteado: "Pedro" },
-  { nome: "Pedro", sorteado: "Ana" },
-  { nome: "Ana", sorteado: "Carla" },
-  { nome: "Carla", sorteado: "João" }
+  { nome: "Thabata26", sorteado: "Rodrigo" },
+  { nome: "Rodrigo17", sorteado: "Vo Pedro" },
+  { nome: "Renam29", sorteado: "Luana" },
+  { nome: "Leticia33", sorteado: "Diva" },
+  { nome: "Diva56", sorteado: "Kelvin" },
+  { nome: "Luana11", sorteado: "Thabata" },
+  { nome: "Kelvin21", sorteado: "Leticia" },
+  { nome: "Andreia44", sorteado: "Renam" },
+  { nome: "Thalita27", sorteado: "Andreia" },
+  { nome: "VoPedro50", sorteado: "Cleide" },
+  { nome: "Marcio66", sorteado: "Thalita" },
+  { nome: "Cleide77", sorteado: "Evanir" },
+  { nome: "Evanir88", sorteado: "Marcio" }
 ];
 
 function verAmigoSecreto() {
