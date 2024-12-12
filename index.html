@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    h1 {
+      color: #0e3a74;
+    }
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Amigo Secreto 🎁</h1>
+    <p id="resultado">Carregando...</p>
+  </div>
+
+  <script>
+    // Lista predefinida com IDs e sorteados
+    const participantes = {
+      "joao123": "Maria",
+      "maria456": "Pedro",
+      "pedro789": "Ana",
+      "ana321": "Carla",
+      "carla654": "João"
+    };
+
+    // Função para obter o parâmetro da URL
+    function getParametroUrl(nome) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(nome);
+    }
+
+    // Exibir o nome do sorteado com base no ID
+    function mostrarAmigoSecreto() {
+      const id = getParametroUrl("id"); // Pega o parâmetro 'id' da URL
+      const resultado = document.getElementById("resultado");
+
+      if (id && participantes[id]) {
+        resultado.textContent = `Seu Amigo Secreto é: ${participantes[id]} 🎉`;
+      } else {
+        resultado.textContent = "Link inválido! Contate o organizador.";
+        resultado.style.color = "red";
+      }
+    }
+
+    // Executa a função ao carregar a página
+    window.onload = mostrarAmigoSecreto;
+  </script>
+</body>
+</html>
